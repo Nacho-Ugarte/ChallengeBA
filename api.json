@@ -1,0 +1,50 @@
+[
+    {
+      "camera": "A",
+      "entrance": 1,
+      "title": "Café"
+      
+    },
+    {
+      "camera": "A",
+      "entrance": 1,
+      "title": "Pizza"
+      
+    },
+    {
+      "camera": "B",
+      "entrance": 1,
+      "title": "B"
+      
+    },
+    {
+      "camera": "B",
+      "entrance": 0,
+      "title": "B"
+      
+    },
+    {
+      "camera": "C",
+      "entrance": 1,
+      "title": "Mango"
+      
+    },
+    {
+      "camera": "C",
+      "entrance": 1,
+      "title": "Chela"
+      
+    },
+    {
+        "camera": "C2",
+        "entrance": 1,
+        "title": "Mango"
+        
+      },
+      {
+        "camera": "C2",
+        "entrance": 0,
+        "title": "Chela"
+        
+      }
+  ]
