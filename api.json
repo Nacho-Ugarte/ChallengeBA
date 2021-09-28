@@ -1,48 +1,72 @@
 [
     {
-      "camera": "A",
+      "type": "A",
       "entrance": 1
       
       
     },
     {
-      "camera": "A",
+      "type": "A",
       "entrance": 1
      
       
     },
     {
-      "camera": "B",
-      "entrance": 1
-    
-      
-    },
-    {
-      "camera": "B",
+      "type": "A",
       "entrance": 0
       
       
     },
     {
-      "camera": "C",
+      "type": "A",
+      "entrance": 0
+      
+      
+    },
+    {
+      "type": "B",
+      "entrance": 1
+    
+      
+    },
+    {
+      "type": "B",
+      "entrance": 0
+      
+      
+    },
+    {
+      "type": "B",
       "entrance": 1
       
       
     },
     {
-      "camera": "C",
+      "type": "B",
       "entrance": 1
       
       
     },
     {
-        "camera": "C2",
+      "type": "C",
+      "entrance": 1
+      
+      
+    },
+    {
+      "type": "C",
+      "entrance": 1
+      
+      
+    },
+    {
+        "type": "C2",
         "entrance": 1
         
         
       },
       {
-        "camera": "C2",
+        "type": "C2",
         "entrance": 0
         
         

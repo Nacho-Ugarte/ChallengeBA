@@ -1,61 +1,73 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-        var respuesta = JSON.parse(xhttp.responseText);
+        const cameras = JSON.parse(xhttp.responseText);
 
-        var
+        let
             contadorA = 0,
             contadorB = 0,
             contadorC = 0;
 
-        const recorreArray = arr => {
-            let i = 0;
-            while (i <= arr.length - 1) {
+        /* Recorro el Json identificando camara y codigo de entrada//salida */
 
-                if (arr[i].camera == "A") {
-                    if (arr[i].entrance == 1) {
-                        contadorA = contadorA + 1;
+        cameras.map((camera) => {
 
-                    } else if (arr[i].entrance == 0 && contadorA >= 0) {
-                        contadorA = contadorA - 1;
-                    }
-                }
+            switch (camera.type) {
 
-                if (arr[i].camera = "B") {
-                    if (arr[i].entrance == 1) {
-                        contadorB = contadorB + 1;
+                case "A":
 
-                    } else if (arr[i].entrance == 0 && contadorB >= 0) {
-                        contadorB = contadorB - 1;
-                    }
+                    if (camera.entrance === 1) contadorA++;
+                    if (camera.entrance === 0 && contadorA >= 0) contadorA--;
+                    break;
 
-                }
+                case "B":
 
-                if (arr[i].camera == "C" || arr[i].camera == "C2") {
+                    if (camera.entrance === 1) contadorB++;
+                    if (camera.entrance === 0 && contadorB >= 0) contadorB--;
 
-                    if (arr[i].entrance == 1) {
-                        contadorC = contadorC + 1;
+                    break;
 
-                    } else if (arr[i].entrance == 0 && contadorC >= 0) {
-                        contadorC = contadorC - 1;
-                    }
+                case "C":
 
+                    if (camera.entrance === 1) contadorC++;
+                    if (camera.entrance === 0 && contadorC >= 0) contadorC--;
+                    break;
 
-                }
-               i++;
-                
+                case "C2":
+
+                    if (camera.entrance === 1) contadorC++;
+                    if (camera.entrance === 0 && contadorC >= 0) contadorC--;
+                    break;
+
             }
-            console.log("En la sala A hay: " + contadorA + " personas");
-                console.log("En la sala B hay: " + contadorB + " personas");
-                console.log("En las salas C hay: " + contadorC + " personas");
-     
-        }
-        recorreArray(respuesta);
+        })
+
+                let genteA = contadorA;
+                let genteB = contadorB;
+                let genteC = contadorC;
+
+                let pantallaA = document.getElementById("gente_A");
+                let pantallaB = document.getElementById("gente_B");
+                let pantallaC = document.getElementById("gente_C");
 
 
+            if(genteA>0){
+                pantallaA.innerHTML = "En la sala A hay: "+ "<br>" + genteA + " personas" ;
+            }else{
+                pantallaA.innerHTML = "Sin personas en la sala."
+            }
 
+            if(genteB>0){
+                pantallaB.innerHTML = "En la sala B hay: "+ "<br>" + genteB + " personas" ;
+            }else{
+                pantallaB.innerHTML = "Sin personas en la sala."
+            }
 
-
+            if(genteC>0){
+                pantallaC.innerHTML = "En la sala C hay: "+ "<br>" + genteC + " personas" ;
+            }else{
+                pantallaC.innerHTML = "Sin personas en la sala."
+            }
 
 
 
@@ -63,3 +75,5 @@ xhttp.onreadystatechange = function () {
 };
 xhttp.open("GET", "api.json", true);
 xhttp.send();
+
+

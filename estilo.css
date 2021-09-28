@@ -101,3 +101,21 @@ body {
 .grid-item:nth-child(5){
     z-index: 1;
   }
+
+  #gente_A{
+      text-align:center;
+      font-size: 25px;
+      font-family: 'Sen', sans-serif;
+  }
+
+  #gente_B{
+    text-align:center;
+    font-size: 25px;
+    font-family: 'Sen', sans-serif;
+}
+
+#gente_C{
+    text-align:center;
+    font-size: 25px;
+    font-family: 'Sen', sans-serif;
+}
