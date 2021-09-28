@@ -1,50 +1,50 @@
 [
     {
       "camera": "A",
-      "entrance": 1,
-      "title": "Café"
+      "entrance": 1
+      
       
     },
     {
       "camera": "A",
-      "entrance": 1,
-      "title": "Pizza"
+      "entrance": 1
+     
       
     },
     {
       "camera": "B",
-      "entrance": 1,
-      "title": "B"
+      "entrance": 1
+    
       
     },
     {
       "camera": "B",
-      "entrance": 0,
-      "title": "B"
+      "entrance": 0
+      
       
     },
     {
       "camera": "C",
-      "entrance": 1,
-      "title": "Mango"
+      "entrance": 1
+      
       
     },
     {
       "camera": "C",
-      "entrance": 1,
-      "title": "Chela"
+      "entrance": 1
+      
       
     },
     {
         "camera": "C2",
-        "entrance": 1,
-        "title": "Mango"
+        "entrance": 1
+        
         
       },
       {
         "camera": "C2",
-        "entrance": 0,
-        "title": "Chela"
+        "entrance": 0
+        
         
       }
   ]
