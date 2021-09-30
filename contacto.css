@@ -52,15 +52,26 @@ body {
     
 }
 
-img{
-    border-top: 2px solid #bbb;
-    height: 450px;
+.relleno__foto{
+    margin-top:10px;
+   
+    border : 5px solid #bbb;
+    border-radius: 10px;
+}
+
+img{ 
+    height: 480px;
     width: 800px;
 }
 .relleno__texto{
+    padding-top: 120px;
+    width: 400px;
     color: #fff;
     text-align: center;
     margin-left: 60px;
     font-size: 30px;
     box-sizing: border-box;
+    height: 400px
 }
+
+
