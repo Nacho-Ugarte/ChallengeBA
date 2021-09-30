@@ -24,10 +24,14 @@ body {
 
 .nav__li:hover>a {
     color: #696969;
+    transition-property: color ;
+    transition-duration: .8s;
 }
 
 .nav__li:hover {
     color: #696969;
+    transition-property: color ;
+    transition-duration: .8s;
 }
 
 .nav__ul {
